@@ -1,0 +1,495 @@
+/* ------------->  RESET CSS  <------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+
+/* ------------->  FUENTES PERSONALIZADAS PORTFOLIO  <------------- */
+
+
+@font-face {
+    font-family: "swiza";
+    font-weight: 200;
+    src: url("../fonts/swiza-thin-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 300;
+    src: url("../fonts/swiza-extralight-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 400;
+    src: url("../fonts/swiza-light-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 500;
+    src: url("../fonts/swiza-regular-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 600;
+    src: url("../fonts/swiza-medium-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 700;
+    src: url("../fonts/swiza-semibold-webfont.woff2") format("woff2");
+   
+}
+@font-face {
+    font-family: "swiza";
+    font-weight: 800;
+    src: url("../fonts/swiza-bold-webfont.woff2") format("woff2");
+   
+}
+@keyframes bounceIn {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+	40% {
+    transform: translateY(-30px);
+  }
+	60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+
+
+
+
+.btn{
+    border: 1px solid black;
+    border-radius: 30px ;
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    font-size: 1rem
+}
+
+/* ------------->  HEADER STYLES  <------------- */
+
+.logo a{
+    font-size: clamp(1rem, 3vw, 1.8rem);
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.name {
+    display: inline;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 0.3rem 0.5rem;
+    position: sticky;
+    top:0
+}
+
+.nav-links {
+    display: flex;
+    
+}
+
+.header .nav-links li {
+    
+    padding-left: 1rem;
+    a {
+    text-decoration: none;
+    }
+}
+
+.burger-menu, .close-menu{
+  
+    display: none;
+}
+
+
+.hero-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-text {
+    width: 100%;
+    font-size: clamp(1rem, 12vw, 10rem);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+
+.go-down {
+    a{
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+        color: blacK;
+        
+      }
+}
+
+
+
+/* ------------->  CHECKBOX DAR&LIGHT  <------------- */
+
+
+.dark-light {
+    transform: rotate(90deg);
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+
+
+.check-dark-light[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+ .switch-dark-light {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 26px;
+    border: solid 1px black;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  .switch-dark-light:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    border: solid 1px black;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+  
+  .check-dark-light:checked + .switch-dark-light {
+    background: black;
+  }
+  
+  .check-dark-light:checked + .switch-dark-light:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+  }
+  
+  .switch-dark-light:active:after {
+    width: 130px;
+  }
+
+
+
+  /* finish checkbox <------------- */
+
+
+  /* ------------->  dark light  <------------- */
+
+body {
+    font-family: "swiza", sans-serif;
+    background-color: #E9E9E9;
+    &.dark{
+        background-color: black;
+        color: aliceblue;
+        .go-down a{
+            color: azure;
+        }
+        .nav-links li a{
+            color: aliceblue;
+        }
+        .logo a{
+            color:white;
+        }
+    }
+}
+
+/* ------------->   MAIN CSS   <------------- */
+/* ------------->              <------------- */
+
+.item-proyecto-flex {
+   
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        display: flex;
+        gap: 50px;
+ 
+
+}
+
+.img-proyecto {   
+   
+    overflow: hidden;
+    height: 400px;
+
+    img{
+        width: 100%;
+    }  
+}
+
+.item-proyecto-01 {
+    flex: 0 1 50%;
+}
+
+.category {
+
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #E95461;
+}
+.tittle {
+    font-size: clamp(1rem, 12vw, 5rem);
+    font-weight: 700;
+}
+
+.text-project {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.btn-project {
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-project:after {
+    content: '->';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+    color: black;
+  }
+  
+  .btn-project:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .btn-project:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+/* ------------->  FOOTER CSS  <------------- */
+/* ------------->              <------------- */
+
+
+
+.footer {
+    background-color: black;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-between;
+    color: white;
+
+    a{
+        color: white;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        a{
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        
+    }
+
+}
+
+
+
+.nav {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.header .nav-links li {
+    padding-left: 1rem;
+    color: white;
+}
+
+.header .nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu, .close-menu {
+    display: none;
+}
+  
+
+  
+  
+  
+  
+
+/* ------------->                                                    <------------- */
+/* ------------->  Small devices (landscape phones, less than 768px) <------------- */
+/* ------------->                                                    <------------- */
+
+
+
+@media (max-width: 767.98px) {
+
+    .burger-menu, .close-menu {
+        display: block;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        position: fixed;
+        width: 50%;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding: 2rem;
+        background-color: black;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+        z-index: 1000;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* Aumentamos la especificidad del selector en lugar de usar !important */
+    .header .nav .nav-links li {
+        padding-bottom: 1rem;
+        width: 100%;
+        text-align: right;
+    }
+
+    .header .nav .nav-links li a {
+        color: white;
+        font-size: 1.2rem;
+        display: block;
+        padding: 0.5rem 0;
+        text-decoration: none;
+    }
+
+
+    .item-proyecto-flex {
+   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+ 
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    .flex-reverse {
+        flex-direction: column;
+      }
+      .main{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+   
+ }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">wwween</a>
+        </div>
+        <div class="burger-menu" id="open">
+           <img src="./assets/svg/burguer-menu.svg"  alt="burger-menu">
+        </div>
+        <nav class="nav" id="nav">
+            <div class="close-menu" id="close">
+                <img src="./assets/svg/close-menu.svg"  alt="burger-menu-close">
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="dark-light">
+        <input class="check-dark-light" type="checkbox" id="switch"/>
+        <label class="switch-dark-light" for="switch">Toggle</label>
+    </div>
+
+    <main class="main">
+        <article class="work">
+            <div class="item-flex-work">
+                <p class="category">Editorial</p>
+                <h2 class="tittle">Espiral ediciones</h2>
+            </div>
+            <div class="item-flex-work slider">
+                <div class="slider-inner">
+                    <img class="img-exiles" src="assets/img/Book_espiral_2.jpg" alt="foto_exiles">
+       
+                </div>
+            </div>    
+        </article>
+        <div class="container-info-work">
+            <ul class="item-flex-info-work">
+                <li><span>año:</span>20230</li>
+                <li><span>autor:</span>Pablo González</li>
+                <li><span>Categoría:</span>Editorial</li>
+                <li><span>materiales:</span>Indesign</li>
+                <li><span>medio:</span>Impreso</li>
+               
+            </ul>
+            <div class="item-flex-info-work text-work">
+                <p>El diseño de la colección de poemario gallego para la editorial "Espiral" busca reflejar la esencia profunda de la cultura gallega, fusionando lo moderno con lo ancestral. La editorial, cuyo nombre hace referencia al concepto de espiral, símbolo de continuidad, crecimiento y ciclos, transmite este concepto en su identidad visual.
+                El logotipo diseñado para "Espiral" combina una tipografía elegante y contemporánea con elementos simbólicos celtas que evocan la historia y la tradición gallega. La tipografía es cuidadosamente elegida para transmitir seriedad y sofisticación, mientras que la simbología celta, como el triskel o el lazo de la espiral, conecta con las raíces de la cultura gallega, sus mitos y leyendas.
+                </p>
+            </div>
+        </div>
+        <div class="second-container">
+            <section class="item-flex-second-container">
+               <p>La espiral, en particular, es un símbolo recurrente en el arte y la arquitectura celta, representando el movimiento eterno, la conexión con la naturaleza y la evolución constante. En este caso, el logotipo no solo alude al nombre de la editorial, sino también al propio flujo de la literatura, que, como la espiral, sigue un ciclo interminable de creación y apreciación.
+                Este enfoque visual ofrece un diseño que respeta y resalta las tradiciones gallegas, mientras que también transmite la modernidad y el dinamismo necesarios para captar la atención de un público contemporáneo. La mezcla de tipografía y simbolismo celta, junto con la elección de colores inspirados en la tierra y la naturaleza de Galicia, crea una imagen coherente y potente que refleja tanto el respeto por la tradición como la innovación literaria de la editorial.</p>
+            </section>
+
+            <div class="item-flex-second-container carousel-container">
+                <div class="carousel">
+                   
+                        <img class="slide" src="assets/img/espiral_1.jpg" alt="Image 1">
+                  
+                    
+                        <img class="slide" src="assets/img/espiral_3.jpg" alt="Image 2">
+           
+                  
+                        <img class="slide" src="assets/img/espiral_2.jpg" alt="Image 3">
+                        <button class="prev" onclick="prevSlide()">&#10094</button>
+                        <button class="next" onclick="nextSlide()">&#10095</button>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+    
+    </main>
+
+    <footer class="footer">
+
+        <div>
+            <a href="index.html">Mi portfolio</a>
+            <br>&copy; 2024
+        </div>
+
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="#">Nota Legal</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

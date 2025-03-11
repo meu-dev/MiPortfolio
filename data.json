@@ -1,0 +1,41 @@
+{
+    "name":"Pablo González",
+    "descripcion":" Soy un diseñador gráfico multidisciplinar, en los proyectos grandes puedo abarcar todas las fase del diseño optimizando así los flujos y tiempos de trabajo. En mis diseños utilizo un lenguaje visual simple y conceptual ayudando a mis clientes asi a comunicar de una forma más clara, efectiva y original.. Hago especial incapieé en la busqueda de materiales diferentes para los soportes de comunicación creando piezas únicas he irrepetibles.",
+    "curriculum":"A lo largo de los años después de haber terminado mis estudios. Tuve la oportunidad de trabajar en diferentes empresas a nivel Europeo, gracias a mi estancia en la ciudad de Berlín por más de 6 años. Todas estas experiencias me han hecho crecer tanto a nivel individual como colectivo",
+    "proyectos": [
+            {
+                "nombre":"Exiles fc",
+                "imagen":"../assets/img/exiles_02.jpg",
+                "descripcion":"Este proyecto nace de un interés personal en la historia del fútbol y de dar a conocer los inicios de este deporte no sólo en Galicia, sino también a nivel nacional. El Exiles Football Club, de ahora en adelante Exiles F.C., se fundó a finales del siglo XIX en Vigo por un grupo de trabajadores ingleses que se trasladó a Galicia para ejecutar el mantenimiento del Cable Inglés. La sociedad conformada por personas procedentes de una pequeña ciudad aislada al sur de Cornualles (Reino Unido) fue una das primeiras sociedades deportivas creadas en el estado español en aquella época. A pesar de que el fútbol era un deporte en auge en Inglaterra, se trataba de un deporte descubierto en la península Ibérica.",
+                "categoria":"branding"
+            },
+            {
+                "nombre":"Colección poemario Galego",
+                "imagen":"../assets/img/espiral_1.jpg",
+                "descripcion":"El diseño de la colección de poemario gallego para la editorial busca reflejar la esencia profunda de la cultura gallega, fusionando lo moderno con lo ancestral. La editorial, cuyo nombre hace referencia al concepto de espiral, símbolo de continuidad, crecimiento y ciclos, transmite este concepto en su identidad visual.",
+                "categoria":"Editorial"
+            }  
+
+    ],
+    "name":"Pablo González",
+    "descripcion":" Soy un diseñador gráfico multidisciplinar, en los proyectos grandes puedo abarcar todas las fase del diseño optimizando así los flujos y tiempos de trabajo. En mis diseños utilizo un lenguaje visual simple y conceptual ayudando a mis clientes asi a comunicar de una forma más clara, efectiva y original.. Hago especial incapieé en la busqueda de materiales diferentes para los soportes de comunicación creando piezas únicas he irrepetibles.",
+    "curriculum":"A lo largo de los años después de haber terminado mis estudios. Tuve la oportunidad de trabajar en diferentes empresas a nivel Europeo, gracias a mi estancia en la ciudad de Berlín por más de 6 años. Todas estas experiencias me han hecho crecer tanto a nivel individual como colectivo",
+    "proyectos": [
+            {
+                "nombre":"Exiles fc",
+                "imagen":"../assets/img/exiles_02.jpg",
+                "descripcion":"Este proyecto nace de un interés personal en la historia del fútbol y de dar a conocer los inicios de este deporte no sólo en Galicia, sino también a nivel nacional. El Exiles Football Club, de ahora en adelante Exiles F.C., se fundó a finales del siglo XIX en Vigo por un grupo de trabajadores ingleses que se trasladó a Galicia para ejecutar el mantenimiento del Cable Inglés. La sociedad conformada por personas procedentes de una pequeña ciudad aislada al sur de Cornualles (Reino Unido) fue una das primeiras sociedades deportivas creadas en el estado español en aquella época. A pesar de que el fútbol era un deporte en auge en Inglaterra, se trataba de un deporte descubierto en la península Ibérica.",
+                "categoria":"branding"
+            },
+            {
+                "nombre":"Colección poemario Galego",
+                "imagen":"../assets/img/espiral_1.jpg",
+                "descripcion":"El diseño de la colección de poemario gallego para la editorial busca reflejar la esencia profunda de la cultura gallega, fusionando lo moderno con lo ancestral. La editorial, cuyo nombre hace referencia al concepto de espiral, símbolo de continuidad, crecimiento y ciclos, transmite este concepto en su identidad visual.",
+                "categoria":"Editorial"
+            }  
+        ]
+}
+
+
+
+

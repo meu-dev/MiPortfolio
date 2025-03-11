@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">wwween</a>
+        </div>
+        <div class="burger-menu" id="open">
+           <img src="./assets/svg/burguer-menu.svg"  alt="burger-menu">
+        </div>
+        <nav class="nav" id="nav">
+            <div class="close-menu" id="close">
+                <img src="./assets/svg/close-menu.svg"  alt="burger-menu-close">
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#main">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dark-light">
+        <input class="check-dark-light" type="checkbox" id="switch"/>
+        <label class="switch-dark-light" for="switch">Toggle</label>
+    </div>
+
+    <main class="main-contact">
+
+        <article class="text-contact">
+           
+                <div class="item flex data-adress">
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Avd/Balaidos, 60</p>
+                        <p>36210 Vigo, Pontevedra</p>
+                        <p>España</p>
+                    </div>  
+                    <div>
+                        <h3>contacto</h3>
+                        <p>+34 600 000 000</p>
+                        <p>info@my-portfolio.com</p>
+                    </div> 
+                 
+                    <div class="social-net">
+                        <h3>Sigueme!</h3>
+                        <ul>
+                            <li><a href=""></a><i class="bi bi-facebook"></i></li>
+                            <li><a href=""></a><i class="bi bi-instagram"></i></li>
+                            <li><a href=""></a><i class="bi bi-twitter"></i></li>
+                            <li><a href=""></a><i class="bi bi-dribbble"></i></li>
+                        </ul>
+                    </div>  
+                    
+                </div>
+
+            <div class="item-flex first-item">
+    
+                <p class="category">Contacta</p>
+                <h2>Escribeme!</h2>
+                <p>Si deseas pinerte en contacto podrás encontrarme en las siguiente dirección o bajo el correo electronico</p>
+    
+            </div>
+            
+        </article>
+           
+            <section class="item-flex second-item">
+                
+                <form action="form" class="form">
+                    <div class="tittle-form">
+                            
+                        <p>Si lo prefieres puedes rellenar directamente el formulario</p>
+                    </div>
+
+                    <div class="flex-form-item-1">
+                        <div class="item-form-nombre info-form">
+                            <label for="">Nombre</label>
+                            <input class="info-form input-field" type="text" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="item-form-apellidos info-form">
+                            <label  for="Apellidos">Apellidos</label>
+                            <input class="info-form input-field" type="text" name="apellidos" id="apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="flex-form-item-2">
+                        <div class="item-form-email info-form">
+                            <label  for="Correo electronico">Correo electronico</label>
+                            <input placeholder="" class="info-form input-field" type="email" name="Correco electronico" id="correo" required>
+                        </div>
+        
+                        <div class="item-form-telefono info-form">
+                            <label for="">Teléfono</label>
+                            <input  class="info-form input-field"   type="tel" name="telefono" id="telefono" required>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <label for="comentario">Escribe tu comentario</label>
+                        <textarea class="textarea-form-contact info-form input-field" name="comentario" id="comentario"></textarea>
+                    </div>
+    
+                    <div>
+                        <label for=""></label><input type="checkbox"> Acepto la <a href="#">Política de privacidad</a></label>
+                    </div>
+    
+                    <div>
+                        <input class="submit-form-contact input-field" type="submit" id="btn-enviar" name="enviar" value="Enviar">
+                    </div>
+    
+                </form>
+                <div id="caja"></div>
+                    
+            </section>        
+            
+        </article>
+    </main>
+    <div class="location">
+        <div>
+            <button id="btn">mi ubicación</button>
+            <p id="ubicacion"></p>
+        </div>
+    </div>
+    <section id="map"></section>
+    <footer class="footer">
+
+        <div>
+            <a href="index.html">Mi portfolio</a>
+            <br>&copy; 2024
+        </div>
+
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="#">Nota Legal</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </nav>
+       
+
+    </footer>
+    <script src="./js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMew3pxcgiTG5u9fbEQ_cRyrtXXJP-b1o&callback=iniciarMap"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

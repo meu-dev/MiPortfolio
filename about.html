@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">wwween</a>
+        </div>
+        <div class="burger-menu" id="open">
+           <img src="./assets/svg/burguer-menu.svg"  alt="burger-menu">
+        </div>
+        <nav class="nav" id="nav">
+            <div class="close-menu" id="close">
+                <img src="./assets/svg/close-menu.svg"  alt="burger-menu-close">
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="dark-light">
+        <input class="check-dark-light" type="checkbox" id="switch"/>
+        <label class="switch-dark-light" for="switch">Toggle</label>
+    </div>
+
+    <main class="main">
+        
+            <article class="about">
+                <div class="item_flex_about">
+                    <h2>{{datos.name}}</h2>
+                    <p>diseñador &<br><span>front-end dev</span></p>
+                </div>
+                <div class="item_flex_about">
+                    <figure><img class="img-smile" src="assets/img/yoo.png" alt=""></figure>
+                </div>    
+            </article>
+        
+        <div class="container_about-me">
+            
+            <div class="text1">
+                <p>
+                    {{datos.descripcion}}
+                </p>
+            </div>
+        </div> 
+        <div class="container-columns">
+            <article class="column_1">
+                <h3>Formación</h3>
+                <p class="bold">Fomración Academica</p>
+                
+            
+                <ul>
+                    <li>Septiembre 2022/ Abril 2024 - 4º curso (curso puente) - Estudios Superiores Diseño Gráfico Titulación grado EASD Antonio Faílde</li>
+                    <li>Enero 2014 - Proyecto final - Estudios Superiores Diseño Gráfico EASD Antonio Faílde</li>
+                    <li>Septiembre 2007 - Enero 2011 - Estudios Superiores Diseño Gráfico (3 años) Plan antiguo EASD Antonio Faílde</li>
+                    <li>Septiembre 2005 - Junio 2007 - Ciclo Superior Gráfica Publicitaria EASD Antonio Faílde</li>
+                    <li>Septiembre 2002 - Junio 2005 - Bachillerato Artístico IES Nº1 Politécnico de Vigo</li>
+                 
+                </ul>
+              
+            </article>
+            <article class="column_2">
+                <h3>SKILL</h3>
+                <p>Microsoft office</p>
+            
+                <ul>
+                    <li>word</li>
+                    <li>Power Point</li>
+                    <li>Excel</li>
+                </ul>
+                <p>Adobe</p>
+                <ul>
+                    <li>Photoshiop</li>
+                    <li>Illustrator</li>
+                    <li>Indesign</li>
+                    <li>Premier</li>
+                    <li>After Effects</li>
+                </ul>
+                <p>Web</p>
+                <ul>
+                    <li>Wordpress</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                    <li>BOOSTRAP</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+            <article class="column_3">
+
+                <h3>EXPERIENCIA</h3>
+
+                <p>{{datos.curriculum}}</p>
+                <p class="bold">Julio 2022- Actualidad Grupo Profand SLU</p>
+                <p>Diseñador Gráfico & Packaging</p>
+                <ul>
+                    <li>Supervisar las artes finales y el packaging para asegurar el cumplimiento de los estándares de calidad y diseño.</li>
+                    <li>Diseño y creación de piezas gráficas para ferias, anuncios, folletos etc..</li>
+                    <li>Desarrollo de mockups y presentaciones comerciales.</li>
+                    <li>Retoque fotográfico</li>
+                </ul>
+                <p class="bold">Febrero 2019 - Julio 2021 Affairs Concept SL</p>
+                <p>Diseñador Gráfico & web</p>
+                <ul>
+                    <li>Estampación textil por sublimación</li>
+                    <li>Diseño mallas deportivas</li>
+                    <li>Diseño Gráfico - Branding</li>
+                    <li>Retoque fotográfico</li>
+                </ul>
+                <p class="bold">Julio 2015 - Julio 2016 IC-Berlin! GmbH</p>
+                <p>Diseñador Gráfico </p>
+                <ul>
+                    <li>Máquetación</li>
+                    <li>Diseño online y offline</li>
+                    <li>Diseño producto marketing</li>
+                    <li>Retoque fotográfico</li>
+                </ul>
+                <p class="bold">Julio 2015 - Julio 2016 Studio 38 GmbH</p>
+                <p>Diseñador Gráfico </p>
+                <ul>
+                    <li>Máquetación</li>
+                    <li>Diseño online y offline</li>
+                    <li>Diseño producto marketing</li>
+                    <li>Retoque fotográfico</li>
+                </ul>
+                
+            </article>
+
+        </div>  
+        <div>
+            <h3 class="tittle-see">ver últimos trabajos</h3>
+            <div class="container-portfolio">
+           
+            
+                <article v-for="proyecto in datos.proyectos"  class="item-flex-portfolio">
+                    <figure><img :src="proyecto.imagen" :alt="imagen-proyecto"></figure>
+                    <p>{{proyecto.categoria}}</p>
+                    <h4>{{proyecto.nombre}}</h4>
+                    <button  class="btn btn-project">saber más</button>
+                </article>
+               
+              
+                
+            </div> 
+    
+    </main>
+
+    <footer class="footer">
+
+        <div>
+            <a href="index.html">Mi portfolio</a>
+            <br>&copy; 2024
+        </div>
+
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="#">Nota Legal</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+</div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+ 
+
+</body>
+
+</html>

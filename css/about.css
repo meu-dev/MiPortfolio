@@ -1,0 +1,224 @@
+.about {
+   
+    width: 100%;
+    display:flex;
+      flex-direction:row;
+      
+      align-items: center;
+    
+    h2{
+        
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    p{
+        padding-top: 0.2rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: clamp(2rem, 5vw, 8rem);
+        span {
+            font-weight: 400;
+            font-size: clamp(1.5rem, 3vw, 6rem);
+       
+        }
+    }
+}
+
+
+
+
+.img-smile {
+    max-width: 900px;
+}
+
+.item_flex_about {
+    flex: 0 1 50%;
+
+   
+}
+
+
+.item_flex_2 img {
+    width: 600px;
+    height: auto;
+   
+
+}
+
+
+.container_text1 {
+    display: flex;
+    gap:300px;
+    margin-top: 80px;
+   
+}
+.ghost_div {
+    flex: 0 0 30%;
+
+}
+.text1 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.5rem;
+    font-weight:100;
+    color: #E95461;
+   
+    margin-top: 2rem;
+    padding-left: 50%;
+   
+  
+
+}
+
+.container-columns {
+    color:#E95461;
+    font-size: 0.8rem;
+    margin-top: 8rem;
+    font-weight: 200;
+    line-height: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    h3{
+        text-transform: uppercase;
+        font-weight:800;
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    p, ul{
+        margin-top:20px ;
+        list-style-type: circle;
+    }
+  
+}
+
+.column_1, .column_2, .column_3  {
+  
+  flex: 0 0 30%;
+ 
+  font-size: 1rem;
+
+}
+
+
+.column_1 ul{
+    margin-bottom: 30px;
+
+}
+.contact_ul {
+    color:#E95461;
+    font-weight: 800;
+    padding-top: 25px;
+    text-decoration: underline #E95461;
+}
+
+.bold{
+    font-weight: 600;
+
+}
+
+.container-portfolio {
+    display: flex;
+    margin-top: 4rem;
+   margin-bottom: 4rem;
+    h3{
+        text-transform: uppercase;
+        font-weight:800;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        padding-bottom: 50px;
+    }
+}
+
+.footer_sec_1, .footer_sec_2 {
+    display: flex;
+    padding-bottom: 80px;
+}
+.item-flex-portfolio {
+    max-width: 30%;
+    flex: 0 0 30%;
+    padding-right: 2rem;
+    h4{
+        padding-top: 5px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    p {
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+}
+.tittle-see{
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+/* ------------->                                                    <------------- */
+/* ------------->  Small devices (landscape phones, less than 768px) <------------- */
+/* ------------->                                                    <------------- */
+
+
+
+@media (max-width: 767.98px) {
+
+
+    .main{
+        padding-left: 2rem;
+        padding-right: 2rem;;
+    }
+    .container-columns {
+        display:flex;
+        flex-direction: column;
+       
+        gap:20px;
+
+    }
+   
+      .about{
+        display:flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+      }
+
+      .img-smile {
+        max-width: 300px;
+    }
+    .text1 {
+        width: 100%;
+        padding-left: 0;
+    }
+    .container-portfolio{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .item-flex-portfolio{
+       max-width: 100%;
+       padding-bottom: 2rem;
+    }
+    .tittle-see{
+        padding-bottom: 0.5rem;
+    }
+   
+ }

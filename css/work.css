@@ -1,0 +1,154 @@
+
+.main{
+    margin-top: 8rem;
+}
+
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+}
+
+
+.work {
+    display: flex;
+    
+}
+
+.img-exiles {
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.item-flex-work {
+    
+        flex-grow:1;
+        flex-basis:46%;
+        margin-bottom: 5rem;
+     
+}
+
+.container-info-work {
+    display: flex;
+    margin-bottom: 6rem;
+   
+}
+.item-flex-second-container{
+    flex: 0 1 50%;
+}
+
+.item-flex-info-work{
+    flex: 0 1 50%;
+    li{
+        margin-bottom: 1rem;
+    }
+    li>span{
+        text-transform: uppercase;
+        font-weight: 600;
+
+    }
+}
+.item-flex-second-container p{
+    font-size: clamp(1rem, 3vw, 1.2rem);
+        line-height: 1.5rem;
+
+}
+.text-work {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.5rem;
+}
+
+
+.content-chart{
+    width: 100%;
+  
+}
+
+
+.second-container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 6rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    font-size: 18px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+/* ------------->                                                    <------------- */
+/* ------------->  Small devices (landscape phones, less than 768px) <------------- */
+/* ------------->                                                    <------------- */
+
+
+
+@media (max-width: 767.98px) {
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .container-info-work {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+  
+        
+    }
+    .main {
+        margin-top: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    .img-exiles {
+
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+   
+ }

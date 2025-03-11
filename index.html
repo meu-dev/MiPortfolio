@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <title>Document</title>
+    </head>
+   
+    <body>
+        <div id="app">
+    
+            <header class="header">
+                <div class="logo">
+                    <a href="index.html">wwween</a>
+                </div>
+                <div class="burger-menu" id="open">
+                    <img src="./assets/svg/burguer-menu.svg" @click="toggleMenu" alt="burger-menu">
+                </div>
+                <nav :class="{ 'active': menu_abierto }" class="nav" id="nav">
+                    <div class="close-menu" id="close">
+                        <img src="./assets/svg/close-menu.svg" @click="toggleMenu" alt="burger-menu-close">
+                    </div>
+                    <ul  class="nav-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#main">Work</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="sticky">
+            <div class="dark-light">
+                <input class="check-dark-light" type="checkbox" id="switch"/>
+                <label class="switch-dark-light" for="switch">Toggle</label>
+            </div>
+            </div>
+            <section class="hero-content">
+                <h1 class="hero-text">Hola! bienvenidos a mi portfolio <span class="smile">&#9786</span></h1>
+                <div class="go-down"><a href="#main">&darr;</a></div>
+            
+                
+            </section>
+            <main id="main" class="main">
+
+                <article v-for="proyecto in datos.proyectos" class="item-proyecto-flex">
+                    <figure class="item-proyecto-01 img-proyecto">
+                        <img :src="proyecto.imagen" :alt="imagen-exiles-proyecto1">
+                    </figure>
+                    <div class="content-project item-proyecto-01">
+                            <p class="category">{{proyecto.categoria}}</p>
+                            <h2 class="tittle">{{proyecto.nombre}}</h2>
+                            <p class="text-project">{{proyecto.descripcion}}.</p>
+                            <button onclick='window.location.href = "work-1.html"' class="btn btn-project">saber más</button>
+                    </div>
+                    
+                </article>
+                
+                <!--
+                <article class="item-proyecto-flex">
+                    <figure class="item-proyecto-01 img-proyecto">
+                        <img src="./assets/img/exiles_02.jpg" alt="imagen-exiles-proyecto1">
+                    </figure>
+                    <div class="content-project item-proyecto-01">
+                            <p class="category">Branding</p>
+                            <h2 class="tittle">Exiles fc</h2>
+                            <p class="text-project">Este proyecto nace de un interés personal en la historia del fútbol y de dar a conocer los inicios de este deporte no sólo en Galicia, sino también a nivel nacional. El Exiles Football Club, de ahora en adelante Exiles F.C., se fundó a finales del siglo XIX en Vigo por un grupo de trabajadores ingleses que se trasladó a Galicia para ejecutar el mantenimiento del Cable Inglés. La sociedad conformada por personas procedentes de una pequeña ciudad aislada al sur de Cornualles (Reino Unido) fue una das primeiras sociedades deportivas creadas en el estado español en aquella época. A pesar de que el fútbol era un deporte en auge en Inglaterra, se trataba de un deporte descubierto en la península Ibérica.</p>
+                            <button onclick='window.location.href = "work-1.html"' class="btn btn-project">saber más</button>
+                    </div>
+                    
+                </article>
+
+                <article class="item-proyecto-flex flex-reverse">
+                    <figure class="item-proyecto-01 img-proyecto">
+                        <img src="./assets/img/Book_espiral_1.jpg" alt="imagen-exiles-proyecto1">
+                    </figure>
+                    <div class="content-project item-proyecto-01">
+                            <p class="category">Editorial</p>
+                            <h2 class="tittle">Espiral ediciones</h2>
+                            <p class="text-project">El diseño de la colección de poemario gallego para la editorial "Espiral" busca reflejar la esencia profunda de la cultura gallega, fusionando lo moderno con lo ancestral. La editorial, cuyo nombre hace referencia al concepto de espiral, símbolo de continuidad, crecimiento y ciclos, transmite este concepto en su identidad visual.</p>
+                            <button onclick='window.location.href = "work-2.html"' class="btn btn-project">saber más</button>
+                    </div>
+                    
+                </article>
+            -->
+
+            </main>
+            <footer class="footer">
+
+                <div>
+                    <a href="index.html">Mi portfolio</a>
+                    <br>&copy; 2024
+                </div>
+
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="#">Nota Legal</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </nav>
+
+            </footer>
+        </div>
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/app.js"></script>
+
+    
+    </body>
+</html>

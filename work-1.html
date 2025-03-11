@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">wwween</a>
+            </div>
+            <div class="burger-menu" id="open">
+            <img src="./assets/svg/burguer-menu.svg"  alt="burger-menu">
+            </div>
+            <nav class="nav" id="nav">
+                <div class="close-menu" id="close">
+                    <img src="./assets/svg/close-menu.svg"  alt="burger-menu-close">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="dark-light">
+            <input class="check-dark-light" type="checkbox" id="switch"/>
+            <label class="switch-dark-light" for="switch">Toggle</label>
+        </div>
+
+        <main class="main">
+            <article class="work">
+                <div class="item-flex-work">
+                    <p class="category">Branding</p>
+                    <h2 class="tittle">Exiles cf</h2>
+                </div>
+                <div class="item-flex-work slider">
+                    <div class="slider-inner">
+                        <img class="img-exiles" src="assets/img/exiles_03.jpg" alt="foto_exiles">
+        
+                    </div>
+                </div>    
+            </article>
+            <div class="container-info-work">
+                <ul class="item-flex-info-work">
+                    <li><span>año:</span>2023</li>
+                    <li><span>autor:</span>Pablo González</li>
+                    <li><span>Categoría:</span>2023</li>
+                    <li><span>materiales:</span>2023</li>
+                    <li><span>medio:</span>Impreso</li>
+                    <li><span>info:</span>2023</li>
+                </ul>
+                <div class="item-flex-info-work text-work">
+                    <p>Este proyecto nace de un interés personal en la historia del fútbol y de dar a conocer los inicios de este deporte no sólo en Galicia, sino también a nivel nacional.
+                    El Exiles Football Club, de ágora en adiante Exiles F.C., fundó a finales del siglo XIX en Vigo por un grupo de trabajadores ingleses que se trasladóu a Galicia para ejecutar el mantenimiento del Cable Inglés. A sociedade conformada por persoas procedentes de una pequeña ciudad aillada al sur de Cornualles (Reino Unido) foi una das primeiras sociedades deportivas creadas en el estado español naquela altura. A pesar de que el fútbol era un deporte en auxe en Inglaterra, tratabase de un deporte descubierto en la península Ibérica.
+                    </p>
+                </div>
+            </div>
+            <div class="second-container">
+                <section class="content-chart item-flex-second-container">
+                    <canvas id="myChart" height="300" width="400"></canvas>
+                </section>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img class="slide" v-for="(imagen, index) in imagenes" 
+                             :key="index" 
+                             :src="imagen.src" 
+                             :alt="imagen.alt"
+                             :class="{ active: currentSlide === index }">
+                        
+                        <button class="prev" @click="prevSlide">&#10094;</button>
+                        <button class="next" @click="nextSlide">&#10095;</button>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer class="footer">
+
+            <div>
+                <a href="index.html">Mi portfolio</a>
+                <br>&copy; 2024
+            </div>
+
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#">Nota Legal</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </nav>
+
+        </footer>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+ 
+
+</body>
+
+</html>
