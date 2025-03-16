@@ -7,6 +7,15 @@
         
         <title>Document</title>
     </head>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WW5BGW14LS"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WW5BGW14LS');
+        </script>
    
     <body>
         <div id="app">
@@ -30,10 +39,10 @@
                 </nav>
             </header>
             <div class="sticky">
-            <div class="dark-light">
-                <input class="check-dark-light" type="checkbox" id="switch"/>
-                <label class="switch-dark-light" for="switch">Toggle</label>
-            </div>
+                <div class="dark-light">
+                    <input class="check-dark-light" type="checkbox" id="switch" v-model="isDark" @change="toggleDarkMode"/>
+                    <label class="switch-dark-light" for="switch">Toggle</label>
+                </div>
             </div>
             <section class="hero-content">
                 <h1 class="hero-text">Hola! bienvenidos a mi portfolio <span class="smile">&#9786</span></h1>
@@ -45,15 +54,14 @@
 
                 <article v-for="proyecto in datos.proyectos" class="item-proyecto-flex">
                     <figure class="item-proyecto-01 img-proyecto">
-                        <img :src="proyecto.imagen" :alt="imagen-exiles-proyecto1">
+                        <img :src="proyecto.imagen" :alt="proyecto.nombre">
                     </figure>
                     <div class="content-project item-proyecto-01">
-                            <p class="category">{{proyecto.categoria}}</p>
-                            <h2 class="tittle">{{proyecto.nombre}}</h2>
-                            <p class="text-project">{{proyecto.descripcion}}.</p>
-                            <button onclick='window.location.href = "work-1.html"' class="btn btn-project">saber más</button>
+                        <p class="category">{{proyecto.categoria}}</p>
+                        <h2 class="tittle">{{proyecto.nombre}}</h2>
+                        <p class="text-project">{{proyecto.descripcion}}</p>
+                        <button :onclick="'window.location.href = \'' + proyecto.url + '\''" class="btn btn-project">saber más</button>
                     </div>
-                    
                 </article>
                 
                 <!--

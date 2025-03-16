@@ -451,7 +451,7 @@ body {
         margin-top: 2rem;
     }
 
-    /* Aumentamos la especificidad del selector en lugar de usar !important */
+  
     .header .nav .nav-links li {
         padding-bottom: 1rem;
         width: 100%;
