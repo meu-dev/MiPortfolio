@@ -35,6 +35,12 @@ const app = Vue.createApp({
       this.currentSlide =
         (this.currentSlide - 1 + this.imagenes.length) % this.imagenes.length;
     },
+    goToProject(url) {
+      if (url) {
+        console.log("Navigating to:", url); // For debugging
+        window.location.href = url;
+      }
+    },
   },
   mounted() {
     fetch("data.json")

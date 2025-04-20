@@ -61,7 +61,7 @@
                         <p class="category">{{proyecto.categoria}}</p>
                         <h2 class="tittle">{{proyecto.nombre}}</h2>
                         <p class="text-project">{{proyecto.descripcion}}</p>
-                        <button :onclick="'window.location.href = \'' + proyecto.url + '\''" class="btn btn-project">saber más</button>
+                        <button @click="goToProject(proyecto.url)" class="btn btn-project">saber más</button>
                     </div>
                 </article>
                 

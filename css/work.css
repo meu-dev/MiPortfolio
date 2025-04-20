@@ -70,24 +70,52 @@
 
 .second-container {
     display: flex;
-    gap: 50px;
-    margin-bottom: 6rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.content-chart {
+    flex: 1;
+    min-width: 300px;
+    width: 48%;
+}
+.content-chart h2 {
+    font-size: clamp(2rem, 1vw, 0.8rem);
+    color: #333;
+    padding-bottom: 60px;
+
+    font-weight: 800;
+}
+
+.carousel-container {
+    flex: 1;
+    min-width: 300px;
+    width: 48%;
 }
 
 .carousel {
-    position: relative;
     width: 100%;
+    position: relative;
     overflow: hidden;
 }
 
 .slide {
-    display: none;
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .slide.active {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .content-chart,
+    .carousel-container {
+        width: 100%;
+    }
 }
 
 .prev, .next {
@@ -152,3 +180,17 @@
 
    
  }
+
+.content-chart h2 {
+    font-size: 1.8rem;
+    color: #333;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* For dark mode compatibility */
+.dark .content-chart h2 {
+    color: #fff;
+    text-align: center;
+}

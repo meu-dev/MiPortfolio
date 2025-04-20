@@ -10,30 +10,31 @@
 </head>
 <body>
     <div id="app">
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">wwween</a>
-        </div>
-        <div class="burger-menu" id="open">
-           <img src="./assets/svg/burguer-menu.svg"  alt="burger-menu">
-        </div>
-        <nav class="nav" id="nav">
-            <div class="close-menu" id="close">
-                <img src="./assets/svg/close-menu.svg"  alt="burger-menu-close">
+        <header class="header">
+            <div class="logo">
+                <a href="index.html">wwween</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="burger-menu" id="open">
+                <img src="./assets/svg/burguer-menu.svg" @click="toggleMenu" alt="burger-menu">
+            </div>
+            <nav :class="{ 'active': menu_abierto }" class="nav" id="nav">
+                <div class="close-menu" id="close">
+                    <img src="./assets/svg/close-menu.svg" @click="toggleMenu" alt="burger-menu-close">
+                </div>
+                <ul  class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#main">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     
-    <div class="dark-light">
-        <input class="check-dark-light" type="checkbox" id="switch"/>
-        <label class="switch-dark-light" for="switch">Toggle</label>
+    <div class="sticky">
+        <div class="dark-light">
+            <input class="check-dark-light" type="checkbox" id="switch" v-model="isDark" @change="toggleDarkMode"/>
+            <label class="switch-dark-light" for="switch">Toggle</label>
+        </div>
     </div>
-
     <main class="main">
         
             <article class="about">
@@ -146,7 +147,7 @@
                     <figure><img :src="proyecto.imagen" :alt="imagen-proyecto"></figure>
                     <p>{{proyecto.categoria}}</p>
                     <h4>{{proyecto.nombre}}</h4>
-                    <button  class="btn btn-project">saber más</button>
+                       <button @click="goToProject(proyecto.url)" class="btn btn-project">saber más</button>
                 </article>
                
               
